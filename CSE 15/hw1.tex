@@ -1,0 +1,270 @@
+\documentclass[11pt]{article}
+
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+
+% For enumerated lists using letters: a. b. etc.
+\usepackage{enumitem}
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+
+\begin{document}
+
+% Edit the following putting your first and last names and your lab section.
+\author{Andre Martin\\
+Lab CSE-015-07L F 1:30-4:20pm}
+
+% Edit the following replacing X with the HW number.
+\title{CSE 015: Discrete Mathematics\\
+Fall 2019\\
+Homework \#1\\
+Solution}
+
+% Put today's date in the following.
+\date{September 20, 2019}
+\maketitle
+
+% ========== Begin questions here
+\begin{enumerate}
+
+\item
+\textbf{Question 1:}
+
+\begin{enumerate}[label=(\alph*)]
+\item
+I did not buy a lottery ticket this week.
+
+\item
+If I bought a lottery ticket this week, then I will win the million dollar jackpot on Friday.
+
+\item
+I bought a lottery ticket this week, and I won the million dollar jackpot on Friday.
+
+\item
+I will win the million dollar jackpot on Friday if and only if I buy a lottery ticket this week.
+
+\item
+If I do not buy the lottery ticket this week, then I will not win the million dollar jackpot on Friday.
+
+\end{enumerate}
+
+\item
+\textbf{Question 2:}
+
+\begin{enumerate}[label=(\alph*)]
+\item
+$p \rightarrow \neg q$
+
+\item
+$p \rightarrow q \rightarrow r$
+
+\item 
+$r \rightarrow p$
+
+\item
+$q \rightarrow p \rightarrow r$
+
+\item
+$(p \wedge  q) \rightarrow r)$
+
+\item
+$(r \Leftrightarrow (q \vee p))$
+
+
+
+\end{enumerate}
+
+\item
+\textbf{Question 3:}
+\begin{enumerate}[label=(\alph*)]
+
+\item 
+
+\begin{tabular}{|c|c|c|}
+\hline
+p & \neg p & p \rightarrow \neg p\\
+    \hline
+T & F & F\\
+    \hline
+F & T & T\\
+    \hline
+\end{tabular}
+
+
+\item
+\begin{tabular}{|c|c|c|}
+    \hline
+    p & \neg p & p \Leftrightarrow \neg p\\
+    \hline
+    F & T & F\\
+    \hline
+    T & F & F\\
+    \hline
+\end{tabular}
+
+\item
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & $p \wedge q$ & $p \vee q$ & $(p \wedge q)$ \rightarrow (p \vee q)\\
+    \hline
+T & T & F & T & F \\
+    \hline
+T & F & T & T & F\\
+    \hline
+F & T & F & T & F\\
+    \hline
+F & F & F & T & F\\
+    \hline
+
+\end{tabular}
+
+\item
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & q \rightarrow \neg p & p \leftrightarrow q & (q \rightarrow \neg p) \Leftrightarrow (p \Leftrightarrow q)\\
+    \hline
+T & T & F & T & F \\
+    \hline
+T & F & T & F & F\\
+    \hline
+F & T & T & F & F\\
+    \hline
+F & F & T & T & T\\
+    \hline
+\end{tabular}
+\end{enumerate}
+
+
+\item
+\textbf{Question 4:}
+\begin{enumerate}[label=(\alph*)]
+
+\item
+$r \rightarrow \neg q$
+
+\item
+$(r \wedge p) \rightarrow q$
+
+\item
+$\neg q \rightarrow \neg r$
+
+\item 
+$\neg p \vee r \rightarrow q $
+
+\end{enumerate}
+\textbf{Question 5:}
+\begin{enumerate}[label=(\alph*)]
+
+\item
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+p & q & r & $p \vee q$ & $(p \vee q)$ & $q \vee r$ & $p \vee (q \vee r)$\\
+\hline
+T & T & T & T & T & T & T\\
+\hline
+T & T & F & T & T & T & T\\
+\hline
+T & F & T & T & T & T & T\\
+\hline
+T & F & F & T & T & F & T\\
+\hline
+F & T & T & T & T & T & T\\
+\hline
+F & T & F & T & T & T & T\\
+\hline
+F & F & T & F & T & T & T\\
+\hline
+F & F & F & F & F & F & F\\
+\hline
+\end{tabular}
+
+\item
+\begin{tabular}{|c|c|c|c|c|c|c|}
+
+\hline 
+p & q & r & $p \wedge q$ & $(p \wedge q)$ & $q \wedge p$ & p $\wedge$ ($q \wedge r$)\\
+\hline
+T & T & T & T & T & T & T\\
+\hline
+T & T & F & T & F & T & F\\
+\hline
+T & F & T & F & F & F & F\\
+\hline
+T & F & F & F & F & F & F\\
+\hline
+F & T & T & F & F & F & F\\
+\hline
+F & T & F & F & F & F & F\\
+\hline
+F & F & T & F & F & F & F\\
+\hline
+F & F & F & F & F & F & F\\
+\hline
+
+\end{tabular}
+\end{enumerate}
+
+\textbf{Question 6:}
+\begin{enumerate}[label=(\alph*)]
+
+\item
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+p & q & \neg p & $(p \vee q)$ & \neg p \wedge (p \vee q)$ & ($\neg p \wedge (p \vee q)) \rightarrow q\\
+\hline
+T & T & F & T & F & T\\
+\hline
+T & T & F & T & F & T\\
+\hline
+F & T & T & T & T & T\\
+\hline
+F & T & T & F & F & T\\
+\hline
+\end{tabular}
+
+\item
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+p & q & r & (p \rightarrow q) & (q \rightarrow r) & (p \rightarrow q) \wedge (q \rightarrow r) & (p \rightarrow q) \wedge q \rightarrow r) \rightarrow (p \rightarrow r)\\
+\hline
+T & T & T & T & T & T & T\\
+\hline
+T & T & F & T & T & F & T\\
+\hline
+T & F & T & F & F & F & T\\
+\hline
+T & F & F & F & F & F & T\\
+\hline
+F & T & T & T & T & T & T\\
+\hline
+F & T & F & T & T & F & T\\
+\hline
+F & F & T & T & F & T & T\\
+\hline
+F & F & F & T & F & T & T\\
+\hline
+\end{tabular}
+
+\item
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+p & q & p \rightarrow q & $p \wedge (p \rightarrow q)$ & $(p \wedge (p \rightarrow q)$ \rightarrow q\\
+\hline
+T & T & T & T & T\\
+\hline
+T & F & F & F & T\\
+\hline
+F & T & T & F & T\\
+\hline
+F & F & T & F & T\\
+\hline
+
+
+\end{tabular}
+\end{enumerate}
+\end{enumerate}
+\end{document}
